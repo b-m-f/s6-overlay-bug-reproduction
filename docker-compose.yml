@@ -1,0 +1,9 @@
+version: "3"
+services:
+  s6-bug-test:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    container_name: s6-bug-test
+    volumes:
+      - ./test-file:/test/Testfile
